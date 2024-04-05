@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Alumni_Sans, Inter } from "next/font/google";
 import "./globals.css";
 
 // Component imports
 import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const alumni = Alumni_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "KIS Keep it Safe Cali",
@@ -19,10 +21,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <div>
-        <Navbar />
-      </div>
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body>
+        <div className={`${alumni.className} alumniNavbar antialiased`}>
+          <Navbar />
+        </div>
+        <div className={`${inter.className} interBody antialiased`}>
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

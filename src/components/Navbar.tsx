@@ -3,12 +3,14 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="bg-gray-800 text-white p-4">
+    <nav className="bg-black text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-lg font-bold">
-          <Link href="/">KIS Cali</Link>
+          <Link href="/" className="text-4xl font-thin">
+            KIS Cali
+          </Link>
         </div>
-        <div>
+        <div className="text-2xl">
           <div className="flex space-x-4">
             <Link href="/products">Products</Link>
             <Link href="/services">Services</Link>
