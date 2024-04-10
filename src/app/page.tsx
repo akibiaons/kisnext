@@ -6,7 +6,9 @@ export default function Home() {
     <>
       <div className="mx-auto px-4">
         <Hero />
-        <Bento />
+        <div className="bg-white">
+          <Bento />
+        </div>
       </div>
     </>
   );
