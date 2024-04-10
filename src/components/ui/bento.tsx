@@ -68,6 +68,7 @@ const Bento: React.FC = () => {
             {/* First column for the brand */}
             <div className="flex items-center">
               <Image
+                unoptimized
                 src={brand.logo}
                 alt={`${brand.name} logo`}
                 width={50}
@@ -83,6 +84,7 @@ const Bento: React.FC = () => {
                 className="flex flex-col items-center border-2 border-black"
               >
                 <Image
+                  unoptimized
                   src={safe.image}
                   alt={safe.name}
                   className="w-40 h-40"
