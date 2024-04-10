@@ -67,9 +67,11 @@ const Bento: React.FC = () => {
           <React.Fragment key={brand.id}>
             {/* First column for the brand */}
             <div className="flex items-center">
-              <img
+              <Image
                 src={brand.logo}
                 alt={`${brand.name} logo`}
+                width={50}
+                height={60}
                 className="w-50 h-60"
               />
               <MdKeyboardDoubleArrowRight className="text-black w-20 h-20" />
@@ -80,7 +82,13 @@ const Bento: React.FC = () => {
                 key={safe.id}
                 className="flex flex-col items-center border-2 border-black"
               >
-                <img src={safe.image} alt={safe.name} className="w-40 h-40" />
+                <Image
+                  src={safe.image}
+                  alt={safe.name}
+                  className="w-40 h-40"
+                  width={40}
+                  height={40}
+                />
                 <h3 className="text-2xl font-semibold uppercase">
                   {safe.name}
                 </h3>
