@@ -9,8 +9,14 @@ const content = [
     description:
       "Make it harder for unwanted guests to take away your valuables, buy some time to get your bedside gun ready or call the police you pussy...",
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Collaborative Editing
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <Image
+          src="https://res.cloudinary.com/dfgr7tov1/image/upload/v1712704073/425001492_700761325547751_4300758964046175136_n_kzzojs.jpg"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
       </div>
     ),
   },
@@ -21,7 +27,7 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="/linear.webp"
+          src="https://res.cloudinary.com/dfgr7tov1/image/upload/v1712704012/424428450_378204144831543_1133807574779722000_n.jpg_dabou2_mlqpnj.jpg"
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -35,8 +41,14 @@ const content = [
     description:
       "Protect your cash, jewlery, and second amendment with weather proof and fire proof safes, don't let mother nature have her way with your goods!",
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        Element Protection
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <Image
+          src="https://res.cloudinary.com/dfgr7tov1/image/upload/v1710528445/dataism-24_y9ufhd.svg"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
       </div>
     ),
   },
