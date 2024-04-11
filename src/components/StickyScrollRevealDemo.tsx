@@ -36,17 +36,7 @@ const content = [
       "Protect your cash, jewlery, and second amendment with weather proof and fire proof safes, don't let mother nature have her way with your goods!",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        Version control
-      </div>
-    ),
-  },
-  {
-    title: "San Diego & SD County Installation",
-    description:
-      "We do full service and installation of your safe! Get high quality intallation, as well as tips and tricks to keep your safe working 100%",
-    content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Running out of content
+        Element Protection
       </div>
     ),
   },
