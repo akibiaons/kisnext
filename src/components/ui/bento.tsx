@@ -61,8 +61,8 @@ const brands: Brand[] = [
 
 const Bento: React.FC = () => {
   return (
-    <div className="max-w-7xl mx-auto text-black pt-20 pb-20">
-      <div className="grid grid-cols-3 gap-4">
+    <div className="max-w-7xl mx-auto  pt-20 pb-20">
+      <div className="grid grid-cols-3 gap-10">
         {brands.map((brand) => (
           <React.Fragment key={brand.id}>
             {/* First column for the brand */}
@@ -73,13 +73,13 @@ const Bento: React.FC = () => {
                 width={200}
                 height={200}
               />
-              <MdKeyboardDoubleArrowRight className="text-black w-20 h-20" />
+              <MdKeyboardDoubleArrowRight className="text-white w-20 h-20" />
             </div>
             {/* Second and third columns for the best selling safes */}
             {brand.bestSellingSafes.map((safe) => (
               <div
                 key={safe.id}
-                className="flex flex-col items-center border-2 border-black"
+                className="flex flex-col items-center border-2 border-black bg-white text-black"
               >
                 <Image
                   src={safe.image}
