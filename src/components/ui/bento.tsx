@@ -66,7 +66,7 @@ const Bento: React.FC = () => {
         {brands.map((brand) => (
           <React.Fragment key={brand.id}>
             {/* First column for the brand */}
-            <div className="flex items-center">
+            <div className="flex items-center justify-center">
               <Image
                 src={brand.logo}
                 alt={`${brand.name} logo`}
@@ -79,7 +79,7 @@ const Bento: React.FC = () => {
             {brand.bestSellingSafes.map((safe) => (
               <div
                 key={safe.id}
-                className="flex flex-col items-center border-2 border-black bg-white text-black"
+                className="flex flex-col items-center hover:cursor-pointer border-2 border-black bg-white text-black transition-transform duration-300 ease-in-out transform hover:scale-110"
               >
                 <Image
                   src={safe.image}
@@ -90,9 +90,9 @@ const Bento: React.FC = () => {
                 <h3 className="text-2xl font-semibold uppercase">
                   {safe.name}
                 </h3>
-                <div className="underline hover:cursor-pointer">
+                {/* <div className="underline hover:cursor-pointer">
                   <p className="hover:cursor-pointer">See More...</p>
-                </div>
+                </div> */}
               </div>
             ))}
           </React.Fragment>
