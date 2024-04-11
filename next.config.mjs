@@ -1,14 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  env: {
+    NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME: "dfgr7tov1",
+    NEXT_PUBLIC_CLOUDINARY_PRESET_NAME: "o4beoehp",
+  },
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "res.cloudinary.com",
-        port: "",
-        pathname: "console/c-bc37d939e4330b0eabc7b5b6a67ba7",
-      },
-    ],
+    domains: ["res.cloudinary.com"],
   },
 };
 
